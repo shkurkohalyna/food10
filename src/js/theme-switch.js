@@ -8,16 +8,12 @@ const Theme = {
 };
 
 const savedDataOfTheme = localStorage.getItem('Theme');
-// console.log(savedDataOfTheme);
 
 const parsedDataOfTheme = JSON.parse(savedDataOfTheme);
-// console.log(parsedDataOfTheme);
 
 const isLightTheme = parsedDataOfTheme === Theme.LIGHT;
-// console.log(isLightTheme);
 
 const isDarkTheme = parsedDataOfTheme === Theme.DARK;
-// console.log(isDarkTheme);
 
 if (isDarkTheme) {
   checkBoxEl.checked = true;
